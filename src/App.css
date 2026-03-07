@@ -17,10 +17,12 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   background-color: var(--corJanela);
+  color: var(--corTexto);
 }
 
 :root {
   --corDestaque1: #E36C2A;
   --corJanela: rgb(247, 248, 235);
   --corDestaque2: black;
+  --corTexto: rgb(31, 31, 31);
 }
