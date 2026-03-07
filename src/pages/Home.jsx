@@ -17,7 +17,7 @@ export default function Home() {
                         <img src={WMPlogo} alt="" className='logoWMP' />
                     </div>
                     <div className='direita'>
-                        <h1 className='titulo'>
+                        <h1 className='titulo archivo-black-regular '>
                             Transformamos o seu espaço com qualidade e confiança
                         </h1>
                         <h2 className='subtitulo'>
@@ -37,29 +37,32 @@ export default function Home() {
                             <div className='auxImagem'>
                                 <img src={Secao2_1} alt="" />
                             </div>
-                            <p><b>Instalação Elétrica Predial e Industrial</b></p>
+                            <p className='pBlocoServico'><b>Instalação Elétrica Predial e Industrial</b></p>
                         </div>
                         <div className='blocoItemServico'>
                             <div className='auxImagem'>
                                 <img src={Secao2_2} alt="" />
                             </div>
-                            <p><b>Áreas externas e Paisagismo</b></p>
+                            <p className='pBlocoServico'><b>Áreas externas e Paisagismo</b></p>
                         </div>
                         <div className='blocoItemServico'>
                             <div className='auxImagem'>
                                 <img src={Secao2_3} alt="" />
                             </div>
-                            <p><b>Iluminação com Dimmer</b></p>
+                            <p className='pBlocoServico'><b>Iluminação com Dimmer</b></p>
                         </div>
                         <div className='blocoItemServico'>
                             <div className='auxImagem'>
                                 <img src={Secao2_4} alt="" />
                             </div>
-                            <p><b>Acabamento de Paredes</b></p>
+                            <p className='pBlocoServico'><b>Acabamento de Paredes</b></p>
                         </div>
                     </div>
                 </div>
             </main>
+            <div className='barraSuperiorContato'>
+                <p>Call Us:(353) 087 124 4886</p>
+            </div>
         </>
     )
 }

@@ -1,3 +1,17 @@
+.barraSuperiorContato {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 40px;
+    background-color: var(--corDestaque2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .secao1 {
     display: flex;
     height: 90dvh;
@@ -21,16 +35,18 @@
     flex-direction: column;
     gap: 20px;
     box-sizing: border-box;
+    padding: 20px;
 
 }
 
-.titulo {
+/* .titulo {
     font-size: 45px;
-}
+} */
 
 .subtitulo {
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: normal;
+    font-family: 'Dancing Script', cursive;
 }
 
 .logoWMP {
@@ -45,6 +61,10 @@
     align-items: center;
     justify-content: center;
     height: 100px;
+    border-top: solid 6px white;
+    border-bottom: solid 6px white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .secao2 {
@@ -86,6 +106,10 @@
     align-items: center;
     gap: 10px;
     box-sizing: border-box;
+}
+
+.pBlocoServico {
+    font-family: "Archivo Black", sans-serif;
 }
 
 .blocoItemServico .auxImagem {
