@@ -28,8 +28,8 @@ body {
 
 select {
   padding: 5px;
-  background-color: var(--corDestaque2);
-  color: white;
+  border: none;
+  background-color: var(--corJanela);
 }
 
 :root {

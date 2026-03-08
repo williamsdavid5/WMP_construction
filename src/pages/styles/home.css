@@ -1,353 +1,96 @@
-.barraSuperiorContato {
+.menuSuperior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
+    left: 0;
     box-sizing: border-box;
-    height: 50px;
-    background-color: var(--corDestaque2);
-    /* background-color: white; */
-    color: white;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    /* border-bottom: solid 2px white; */
+    backdrop-filter: blur(5px);
+    border: solid 1px rgba(255, 255, 255, 0.2);
 }
 
-.divAuxRedes {
+.auxRedes {
     height: 100%;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.divAuxRedes a {
-    height: 100%;
+    /* background-color: black; */
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
-.divAuxRedes img {
-    height: 70%;
+.auxRedes a {
+    height: 100%;
+}
+
+.auxRedes a img {
+    height: 100%;
     object-fit: contain;
-    transition: transform ease-in-out 0.1s;
-}
-
-.divAuxRedes img:hover {
-    transform: scale(1.1);
 }
 
 .secao1 {
-    display: flex;
-    height: 95dvh;
-    box-sizing: border-box;
-    background: url('../../assets/backgroundInicial.png') no-repeat right center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-color: black;
-    /* background-position: left center; */
-}
-
-.secao1 .esquerda {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.secao1 .direita {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
-    padding: 20px;
-    color: white
-}
-
-/* .titulo {
-    font-size: 45px;
-} */
-
-.subtitulo {
-    /* font-style: italic; */
-    font-weight: normal;
-    font-family: 'Dancing Script', cursive;
-}
-
-.logoWMP {
-    width: 80%;
-}
-
-.divisaoSecao1 {
     width: 100%;
-    background-color: var(--corDestaque1);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    /* border-top: solid 6px white; */
-    border-bottom: solid 6px white;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.secao2 {
-    display: flex;
-}
-
-.secao2 .imagemLonga {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    box-sizing: border-box;
-    background: url('../../assets/imagemLonga.jpg') no-repeat center center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-}
-
-.tituloSecao2 {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    color: white;
-    backdrop-filter: blur(10px) brightness(50%);
-}
-
-.textoServios {
-    color: white;
-    backdrop-filter: blur(10px) brightness(50%);
-    padding: 40px;
-    font-family: sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-    width: 80%;
-}
-
-.subtituloSecao2 {
-    width: 80%;
-    text-align: center;
-    font-size: 30px;
-    /* font-weight: normal; */
-}
-
-.secao2 .imagemLonga img {
-    object-fit: contain;
-    width: 100%;
-    /* height: 50%; */
-    /* border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
-    /* box-shadow: 15px 15px var(--corTexto); */
-}
-
-.secao2 .direita {
+    height: 90dvh;
     /* background-color: gray; */
-    /* padding: 20px; */
+    padding: 0px 40px;
+    margin-top: 50px;
     box-sizing: border-box;
-    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    padding: 10%;
-    box-sizing: border-box;
 }
 
-.blocoItemServico {
-    /* background-color: gray; */
-    /* border: solid 1px var(--corTexto); */
-    /* width: 60%;
-    height: 20%; */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+.secao1 .background {
     background-color: white;
-}
-
-.textoBloco {
     flex: 1;
-    padding: 20px;
-}
-
-.pBlocoServico {
-    /* font-family: 'Roboto', Times, serif; */
-    font-size: 17px;
-    width: 100%;
-    /* text-align: center; */
-    /* padding: 10px; */
-}
-
-.blocoItemServico .auxImagem {
-    /* border: solid 1px var(--corTexto); */
-    /* height: 100%; */
-    width: 100%;
+    min-width: 0;
+    border-radius: 15px;
+    background: url('../../assets/backgroundInicial.jpg') no-repeat center center;
+    background-size: 100% auto;
+    display: flex;
     overflow: hidden;
-    /* border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
-    /* box-shadow: 15px 15px var(--corTexto); */
 }
 
-.blocoItemServico img {
-    /* height: 100%; */
-    width: 100%;
-    /* object-fit: contain; */
+.secao1 .background .esquerda {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 1200px) {
-    .titulo {
-        font-size: 30px;
-    }
-
-    .secao2 .direita {
-        width: 50%;
-    }
-
-    .secao2 .imagemLonga {
-        width: 50%;
-    }
+.secao1 .background .direita {
+    /* background-color: gray; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
 }
 
-@media (max-width: 1000px) {
-    .secao1 {
-        flex-direction: column;
-    }
-
-    .secao1 .esquerda {
-        width: 100%;
-        height: 60%;
-    }
-
-    .logoWMP {
-        width: auto;
-        object-fit: contain;
-        height: 100%;
-    }
-
-    .secao1 .direita {
-        width: 100%;
-        height: 40%;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: center;
-        padding: 0px 20px;
-    }
-
-    .tituloSecao2 {
-        width: 85%;
-        font-size: 35px;
-    }
-
-    .subtituloSecao2 {
-        width: 85%;
-        font-size: 20px;
-    }
+.secao1 .background .direita h1,
+.secao1 .background .direita h3 {
+    backdrop-filter: blur(2px) brightness(70%);
+    padding: 10px;
 }
 
-@media (max-width: 700px) {
-    .secao1 {
-        background: none;
-        background-color: black;
-        height: 80dvh;
-    }
+.secao1 .background .direita h1 {
+    font-size: 50px;
+}
 
-    .secao1 .esquerda {
-        height: 30%;
-        padding: 50px;
-    }
+.secao1 .background .direita h3 {
+    font-weight: normal;
+}
 
-    .secao1 .direita {
-        height: 70%;
-    }
+.logoPrincipal {
+    height: 400px;
+}
 
-    .logoWMP {
-        width: 100%;
-    }
-
-    .barraSuperiorContato {
-        position: inherit;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        padding: 10px;
-    }
-
-    .divAuxRedes {
-        height: 40px;
-        position: fixed;
-        bottom: 60px;
-        right: 0px;
-        z-index: 1000;
-        flex-direction: column;
-        gap: 0px;
-        background-color: black;
-        height: auto;
-        padding: 10px;
-        width: 30px;
-        gap: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-
-    .divAuxRedes img {
-        height: auto;
-        width: 80%;
-    }
-
-    .secao2 {
-        flex-direction: column;
-    }
-
-    .secao2 .imagemLonga,
-    .secao2 .direita {
-        width: 100%;
-        padding: 40px 0px;
-        background: none;
-    }
-
-    .tituloSecao2,
-    .textoServios {
-        color: var(--corTexto);
-        backdrop-filter: none;
-        padding: 0;
-        width: 90%;
-    }
-
-    .imagemLonga img {
-        display: none;
-    }
-
-    .blocoItemServico .auxImagem {
-        width: 80%;
-        /* height: 200px; */
-        /* height: auto; */
-    }
-
-    .blocoItemServico .auxImagem img {
-        /* height: 100%; */
-        /* width: auto; */
-        object-fit: contain;
-        width: auto;
-        height: 100%;
+@media (max-width: 1040px) {
+    .secao1 .background {
+        background-size: auto 100%;
     }
 }
