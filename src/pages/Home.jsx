@@ -52,15 +52,18 @@ export default function Home() {
                 <div className='secao2'>
                     <div className='imagemLonga'>
                         <h1 className='tituloSecao2'>Transformamos projetos em realidade com mão de obra qualificada</h1>
-                        <img src={ImagemLonga} alt="" />
+                        <h2 className='textoServios'>Renove seu espaço com quem prioriza a qualidade e o cumprimento de prazos. Contamos com uma equipe pronta para atender demandas de construção, reformas de interiores e manutenção predial completa. De projetos de jardinagem ao assentamento técnico de porcelanatos, proporcionamos segurança e beleza para sua residência ou comércio através de soluções integradas e um acabamento verdadeiramente profissional.</h2>
+                        {/* <img src={ImagemLonga} alt="" /> */}
                     </div>
                     <div className='direita'>
-                        <h2 className='subtituloSecao2'>Nossos principais serviços incluem:</h2>
+                        {/* <h2 className='subtituloSecao2'>Nossos principais serviços incluem:</h2> */}
                         <div className='blocoItemServico'>
-                            <div className='auxImagem'>
-                                <img src={Secao2_1} alt="" />
+                            <img src={Secao2_1} alt="" />
+                            <div className='textoBloco'>
+                                <p className='pBlocoServico'><b>Instalação Elétrica Predial e Industrial</b><br />
+                                    Executamos toda a infraestrutura de tubulações, fiações e quadros de energia seguindo as normas de segurança.
+                                </p>
                             </div>
-                            <p className='pBlocoServico'><b>Instalação Elétrica Predial e Industrial</b></p>
                         </div>
                         <div className='blocoItemServico'>
                             <div className='auxImagem'>
