@@ -1,6 +1,7 @@
 import './styles/home.css'
-import InstagramLogo from '../assets/instagram_logo.png'
-import WhatsappLogo from '../assets/whatsapp_logo.png'
+import InstagramLogo from '../assets/instagram.png'
+import WhatsappLogo from '../assets/whatsapp.png'
+import MailLogo from '../assets/e-mail.png'
 import ImagemLonga from '../assets/fotos/jardinNoite.jpeg'
 import WMPlogo from '../assets/WMPlogo.svg'
 import Secao2_1 from '../assets/fotos/secao2-1.jpeg'
@@ -23,6 +24,7 @@ export default function Home() {
                         <h2 className='subtitulo'>
                             Cuidamos de cada detalhe da sua obra ou reforma
                         </h2>
+                        <p>Sua obra em boas mãos. Atuamos com transparência e profissionais qualificados para garantir que sua reforma seja sinônimo de satisfação e durabilidade.</p>
                     </div>
                 </section>
                 <div className='divisaoSecao1'>
@@ -62,6 +64,17 @@ export default function Home() {
             </main>
             <div className='barraSuperiorContato'>
                 <p>Call Us:(353) 087 124 4886</p>
+                <div className='divAuxRedes'>
+                    <a href="">
+                        <img src={InstagramLogo} alt="" />
+                    </a>
+                    <a href="">
+                        <img src={WhatsappLogo} alt="" />
+                    </a>
+                    <a href="">
+                        <img src={MailLogo} alt="" />
+                    </a>
+                </div>
             </div>
         </>
     )

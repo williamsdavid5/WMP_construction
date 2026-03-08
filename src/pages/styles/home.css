@@ -4,18 +4,54 @@
     right: 0;
     z-index: 1000;
     width: 100%;
-    height: 40px;
-    background-color: var(--corDestaque2);
+    box-sizing: border-box;
+    height: 50px;
+    /* background-color: var(--corDestaque2); */
+    /* background-color: white; */
     color: white;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); */
+    /* border-bottom: solid 2px white; */
+}
+
+.divAuxRedes {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.divAuxRedes a {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.divAuxRedes img {
+    height: 70%;
+    object-fit: contain;
+    transition: transform ease-in-out 0.1s;
+}
+
+.divAuxRedes img:hover {
+    transform: scale(1.1);
 }
 
 .secao1 {
     display: flex;
     height: 90dvh;
     box-sizing: border-box;
+    background: url('../../assets/backgroundInicial.png') no-repeat right center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    /* background-position: left center; */
 }
 
 .secao1 .esquerda {
@@ -36,7 +72,7 @@
     gap: 20px;
     box-sizing: border-box;
     padding: 20px;
-
+    color: white
 }
 
 /* .titulo {
@@ -61,9 +97,9 @@
     align-items: center;
     justify-content: center;
     height: 100px;
-    border-top: solid 6px white;
+    /* border-top: solid 6px white; */
     border-bottom: solid 6px white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
