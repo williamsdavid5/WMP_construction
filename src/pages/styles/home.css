@@ -6,7 +6,7 @@
     width: 100%;
     box-sizing: border-box;
     height: 50px;
-    /* background-color: var(--corDestaque2); */
+    background-color: var(--corDestaque2);
     /* background-color: white; */
     color: white;
     align-items: center;
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 20px;
-    /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     /* border-bottom: solid 2px white; */
 }
 
@@ -45,7 +45,7 @@
 
 .secao1 {
     display: flex;
-    height: 90dvh;
+    height: 95dvh;
     box-sizing: border-box;
     background: url('../../assets/backgroundInicial.png') no-repeat right center;
     background-size: auto 100%;
@@ -110,14 +110,34 @@
 .secao2 .imagemLonga {
     width: 60%;
     display: flex;
+    flex-direction: column;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.tituloSecao2 {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.subtituloSecao2 {
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    /* font-weight: normal; */
 }
 
 .secao2 .imagemLonga img {
     object-fit: contain;
-    /* width: 100%; */
-    height: 100%;
+    width: 80%;
+    /* height: 50%; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 15px 15px var(--corTexto);
 }
 
 .secao2 .direita {
@@ -130,6 +150,7 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
+    box-sizing: border-box;
 }
 
 .blocoItemServico {
@@ -145,7 +166,9 @@
 }
 
 .pBlocoServico {
-    font-family: "Archivo Black", sans-serif;
+    font-family: 'Roboto', Times, serif;
+    font-size: 22px;
+    text-align: center;
 }
 
 .blocoItemServico .auxImagem {
@@ -153,6 +176,10 @@
     /* height: 100%; */
     width: 100%;
     overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 15px 15px var(--corTexto);
+    margin-bottom: 20px;
 }
 
 .blocoItemServico .auxImagem img {
@@ -200,4 +227,93 @@
         padding: 0px 20px;
     }
 
+    .tituloSecao2 {
+        width: 85%;
+        font-size: 35px;
+    }
+
+    .subtituloSecao2 {
+        width: 85%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .secao1 {
+        background: none;
+        background-color: black;
+        height: 80dvh;
+    }
+
+    .secao1 .esquerda {
+        height: 30%;
+        padding: 50px;
+    }
+
+    .secao1 .direita {
+        height: 70%;
+    }
+
+    .logoWMP {
+        width: 100%;
+    }
+
+    .barraSuperiorContato {
+        position: inherit;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .divAuxRedes {
+        height: 40px;
+        position: fixed;
+        bottom: 60px;
+        right: 0px;
+        z-index: 1000;
+        flex-direction: column;
+        gap: 0px;
+        background-color: black;
+        height: auto;
+        padding: 10px;
+        width: 30px;
+        gap: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .divAuxRedes img {
+        height: auto;
+        width: 80%;
+    }
+
+    .secao2 {
+        flex-direction: column;
+    }
+
+    .secao2 .imagemLonga,
+    .secao2 .direita {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .imagemLonga img {
+        display: none;
+    }
+
+    .blocoItemServico .auxImagem {
+        width: 80%;
+        /* height: 200px; */
+        /* height: auto; */
+    }
+
+    .blocoItemServico .auxImagem img {
+        /* height: 100%; */
+        /* width: auto; */
+        object-fit: contain;
+        width: auto;
+        height: 100%;
+    }
 }

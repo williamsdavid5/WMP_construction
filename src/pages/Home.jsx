@@ -13,6 +13,25 @@ export default function Home() {
     return (
         <>
             <main className="mainHome">
+                <div className='barraSuperiorContato'>
+                    <select name="" id="">
+                        <option value="" selected>Português</option>
+                        <option value="" selected>English</option>
+                        <option value="" selected>Nederlands</option>
+                    </select>
+                    <p>Call Us:(353) 087 124 4886</p>
+                    <div className='divAuxRedes'>
+                        <a href="">
+                            <img src={InstagramLogo} alt="" />
+                        </a>
+                        <a href="">
+                            <img src={WhatsappLogo} alt="" />
+                        </a>
+                        <a href="">
+                            <img src={MailLogo} alt="" />
+                        </a>
+                    </div>
+                </div>
                 <section className='secao1'>
                     <div className='esquerda'>
                         <img src={WMPlogo} alt="" className='logoWMP' />
@@ -27,14 +46,16 @@ export default function Home() {
                         <p>Sua obra em boas mãos. Atuamos com transparência e profissionais qualificados para garantir que sua reforma seja sinônimo de satisfação e durabilidade.</p>
                     </div>
                 </section>
-                <div className='divisaoSecao1'>
+                {/* <div className='divisaoSecao1'>
                     <h2>Alguns de nossos serviços</h2>
-                </div>
+                </div> */}
                 <div className='secao2'>
                     <div className='imagemLonga'>
+                        <h1 className='tituloSecao2'>Transformamos projetos em realidade com mão de obra qualificada</h1>
                         <img src={ImagemLonga} alt="" />
                     </div>
                     <div className='direita'>
+                        <h2 className='subtituloSecao2'>Nossos principais serviços incluem:</h2>
                         <div className='blocoItemServico'>
                             <div className='auxImagem'>
                                 <img src={Secao2_1} alt="" />
@@ -62,20 +83,6 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <div className='barraSuperiorContato'>
-                <p>Call Us:(353) 087 124 4886</p>
-                <div className='divAuxRedes'>
-                    <a href="">
-                        <img src={InstagramLogo} alt="" />
-                    </a>
-                    <a href="">
-                        <img src={WhatsappLogo} alt="" />
-                    </a>
-                    <a href="">
-                        <img src={MailLogo} alt="" />
-                    </a>
-                </div>
-            </div>
         </>
     )
 }
