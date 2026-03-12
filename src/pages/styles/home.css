@@ -89,8 +89,168 @@
     height: 400px;
 }
 
+.secao2 {
+    background-color: var(--corJanela);
+    /* height: 90dvh; */
+    margin-top: 40px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.secao2 .esquerda {
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.secao2 .esquerda h2 {
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Archivo Black';
+    text-align: right;
+}
+
+.secao2 .esquerda h3 {
+    width: 100%;
+    /* font-weight: normal; */
+    text-align: right;
+    /* font-family: 'Dancing Script'; */
+}
+
+.secao2 .esquerda p {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.secao2 .direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    /* background-color: gray; */
+    box-sizing: border-box;
+}
+
+.blocoServiços {
+    background-color: var(--corDestaque1);
+    color: white;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.blocoServiços hr {
+    background-color: white;
+}
+
+.secao3 {
+    background: url('../../assets/new-red-brick-wall.jpg') no-repeat center center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 60dvh;
+    overflow-y: auto;
+    margin-top: 40px;
+}
+
+.secao3 .blocoServiços {
+    height: 80%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    border: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.auxBlocosServicos {
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 20px;
+}
+
 @media (max-width: 1040px) {
     .secao1 .background {
         background-size: auto 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .secao1 {
+        padding: 0px;
+    }
+
+    .secao1 .background {
+        border-radius: 0px;
+        flex-direction: column;
+    }
+
+    .secao1 .background .esquerda {
+        width: 100%;
+        height: 50%;
+    }
+
+    .secao1 .background .esquerda img {
+        height: 80%;
+        width: auto;
+    }
+
+    .secao1 .background .direita {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+    }
+
+    .secao1 .background .direita h1 {
+        font-size: 30px;
+    }
+
+    .secao2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .secao2 .esquerda,
+    .secao2 .direita {
+        width: 100%;
+    }
+
+    .secao3 .blocoServiços {
+        width: 250px;
+        height: 80%;
+    }
+
+    .secao3 {
+        height: 80dvh;
+    }
+
+    .secao3 {
+        background-size: auto 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .menuSuperior {
+        z-index: 1000;
+    }
+
+    .menuSuperior .auxRedes {
+        position: fixed;
+        bottom: -85dvh;
+        right: 20px;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .menuSuperior .auxRedes a {
+        height: 30px;
     }
 }
