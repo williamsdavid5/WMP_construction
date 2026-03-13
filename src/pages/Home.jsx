@@ -155,7 +155,25 @@ export default function Home() {
                     </div>
                 </section>
                 <footer className='rodape'>
-
+                    <h1>Entre em contato!</h1>
+                    <p>Faça o seu orçamento</p>
+                    <hr />
+                    <div className='auxiliarFooter'>
+                        <p>Providing works in Dublin, Kildare, & Meath.</p>
+                        <p>greenbrazil.ie@gmail.com
+                            (353) 087 124 4886</p>
+                        <div className='footerAuxRedes'>
+                            <a href="">
+                                <img src={InstagramLogo} alt="" />
+                            </a>
+                            <a href="">
+                                <img src={WhatsappLogo} alt="" />
+                            </a>
+                            <a href="">
+                                <img src={MailLogo} alt="" />
+                            </a>
+                        </div>
+                    </div>
                 </footer>
             </main>
         </>

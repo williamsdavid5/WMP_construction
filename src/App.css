@@ -35,7 +35,7 @@ select {
 :root {
   --corDestaque1: #E36C2A;
   --corJanela: rgb(247, 248, 235);
-  --corJanelaBack: rgb(226, 230, 209);
+  --corJanelaBack: rgb(225, 225, 225);
   --corDestaque2: black;
   --corTexto: rgb(28, 28, 28);
 }

@@ -33,6 +33,14 @@
     object-fit: contain;
 }
 
+a img {
+    transition: transform ease 0.1s;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
 .secao1 {
     width: 100%;
     height: 90dvh;
@@ -113,7 +121,7 @@
 .secao2 .esquerda h2 {
     width: 100%;
     font-size: 40px;
-    font-family: 'Archivo Black';
+    font-family: 'Archivo Black', Arial;
     text-align: right;
 }
 
@@ -293,9 +301,51 @@
 }
 
 .rodape {
-    height: 200px;
+    /* height: 200px; */
+    box-sizing: border-box;
     width: 100%;
     background-color: var(--corDestaque1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* background: linear-gradient(0deg, #a3410c 0%, #E36C2A 100%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Open sans', Arial;
+    padding: 20px;
+}
+
+.rodape hr {
+    width: 85%;
+}
+
+.auxiliarFooter {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.footerAuxRedes {
+    width: 130px;
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    flex: 1;
+    min-width: 0;
+}
+
+.footerAuxRedes a img {
+    width: 100%;
+    object-fit: contain;
 }
 
 @media (max-width: 1040px) {
@@ -417,6 +467,11 @@
     .auxiliarListaImagens::-webkit-scrollbar-thumb:hover {
         background: rgba(0, 0, 0, 0.4);
     }
+
+    .auxiliarFooter {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -431,6 +486,10 @@
 
     .menuSuperior .auxRedes a {
         height: 30px;
+    }
+
+    .footerAuxRedes {
+        display: none;
     }
 
     .auxiliarListaImagens::-webkit-scrollbar {
