@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react';
 export default function Home() {
 
     const [imagens, setImagens] = useState([]);
+    const [imagemDestacada, setImagemDestacada] = useState();
 
     useEffect(() => {
         // Vite específico: import.meta.glob
@@ -23,6 +24,7 @@ export default function Home() {
         }));
 
         setImagens(imagensCarregadas);
+        setImagemDestacada(imagensCarregadas[0].src);
     }, []);
 
     return (
@@ -123,16 +125,38 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <div className='intermediaria3-4'>
-                    <h1>Galeria de serviço</h1>
-                </div>
+                {/* <div className='tituloSecao4'>
+                    <h1>Últimos registros</h1>
+                </div> */}
                 <section className='secao4'>
-                    {imagens.map((imagem) => {
-                        return (
-                            <img src={imagem.src} alt="" className='imagensServicos' key={imagem.id} />
-                        )
-                    })}
+                    <div className='esquerda'>
+                        <div className='auxiliarImagemDestaque'>
+                            <img src={imagemDestacada} alt="" />
+                        </div>
+                    </div>
+                    <div className='direita'>
+                        <h1>Últimos registros</h1>
+                        <p>Role a lista de capturas dos últimos trabalhos realizados</p>
+                        <div className='auxiliarListaImagens'>
+                            {imagens.map((imagem) => {
+                                return (
+                                    <>
+                                        <img
+                                            src={imagem.src}
+                                            key={imagem.key}
+                                            className='imagemServicos'
+                                            alt=""
+                                            onClick={() => setImagemDestacada(imagem.src)}
+                                        />
+                                    </>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </section>
+                <footer className='rodape'>
+
+                </footer>
             </main>
         </>
     )
