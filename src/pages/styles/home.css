@@ -11,7 +11,9 @@
     box-sizing: border-box;
     backdrop-filter: blur(5px);
     border: solid 1px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
 }
+
 
 .auxRedes {
     height: 100%;
@@ -177,6 +179,33 @@
     padding: 0px 20px;
 }
 
+.secao4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.imagensServicos {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.linhaImagens {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.imagensServicos:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 1040px) {
     .secao1 .background {
         background-size: auto 100%;
@@ -238,9 +267,6 @@
 }
 
 @media (max-width: 500px) {
-    .menuSuperior {
-        z-index: 1000;
-    }
 
     .menuSuperior .auxRedes {
         position: fixed;

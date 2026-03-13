@@ -2,14 +2,29 @@ import './styles/home.css'
 import InstagramLogo from '../assets/instagram.png'
 import WhatsappLogo from '../assets/whatsapp.png'
 import MailLogo from '../assets/e-mail.png'
-import ImagemLonga from '../assets/fotos/jardinNoite.jpeg'
 import WMPlogo from '../assets/WMPlogo.svg'
-import Secao2_1 from '../assets/fotos/secao2-1.jpeg'
-import Secao2_2 from '../assets/fotos/secao2-2.jpeg'
-import Secao2_3 from '../assets/fotos/secao2-3.jpeg'
-import Secao2_4 from '../assets/fotos/secao2-4.jpeg'
+
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+
+    const [imagens, setImagens] = useState([]);
+
+    useEffect(() => {
+        // Vite específico: import.meta.glob
+        const modules = import.meta.glob('../assets/fotos/*.{jpeg,jpg,png,gif}', {
+            eager: true, // Carrega imediatamente
+        });
+
+        const imagensCarregadas = Object.entries(modules).map(([path, module]) => ({
+            id: path,
+            src: module.default,
+            alt: path.split('/').pop().replace(/\.[^/.]+$/, "")
+        }));
+
+        setImagens(imagensCarregadas);
+    }, []);
+
     return (
         <>
             <main className="mainHome">
@@ -107,6 +122,16 @@ export default function Home() {
                             <p>Executamos toda a infraestrutura de tubulações, fiações e quadros de energia seguindo as normas de segurança. Evite dores de cabeça futuras com sistemas instalados por quem entende de manutenção.</p>
                         </div>
                     </div>
+                </section>
+                <div className='intermediaria3-4'>
+                    <h1>Galeria de serviço</h1>
+                </div>
+                <section className='secao4'>
+                    {imagens.map((imagem) => {
+                        return (
+                            <img src={imagem.src} alt="" className='imagensServicos' key={imagem.id} />
+                        )
+                    })}
                 </section>
             </main>
         </>
