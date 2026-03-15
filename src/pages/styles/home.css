@@ -304,7 +304,7 @@ a img:hover {
     /* height: 200px; */
     box-sizing: border-box;
     width: 100%;
-    background-color: var(--corDestaque1);
+    background-color: var(--corTexto);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     /* background: linear-gradient(0deg, #a3410c 0%, #E36C2A 100%); */
@@ -315,6 +315,10 @@ a img:hover {
     color: white;
     font-family: 'Open sans', Arial;
     padding: 20px;
+}
+
+.rodape img {
+    width: 250px;
 }
 
 .rodape hr {
@@ -490,6 +494,10 @@ a img:hover {
 
     .footerAuxRedes {
         display: none;
+    }
+
+    .rodape img {
+        width: 150px;
     }
 
     .auxiliarListaImagens::-webkit-scrollbar {

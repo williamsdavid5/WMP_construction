@@ -3,6 +3,7 @@ import InstagramLogo from '../assets/instagram.png'
 import WhatsappLogo from '../assets/whatsapp.png'
 import MailLogo from '../assets/e-mail.png'
 import WMPlogo from '../assets/WMPlogo.svg'
+import WMPlogoHorizontal from '../assets/WMPlogoHorizontal.svg'
 
 import { useState, useEffect } from 'react';
 
@@ -155,6 +156,7 @@ export default function Home() {
                     </div>
                 </section>
                 <footer className='rodape'>
+                    <img src={WMPlogoHorizontal} alt="" />
                     <h1>Entre em contato!</h1>
                     <p>Faça o seu orçamento</p>
                     <hr />
